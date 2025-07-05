@@ -7,7 +7,6 @@ import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { RecurringDepositsService } from '../../recurring-deposits.service';
 import { SettingsService } from 'app/settings/settings.service';
 import { Dates } from 'app/core/utils/dates';
-import { STANDALONE_SHARED_IMPORTS } from 'app/standalone-shared.module';
 
 /**
  * Activate Recurring Deposits Account Component
@@ -15,10 +14,7 @@ import { STANDALONE_SHARED_IMPORTS } from 'app/standalone-shared.module';
 @Component({
   selector: 'mifosx-activate-recurring-deposits-account',
   templateUrl: './activate-recurring-deposits-account.component.html',
-  styleUrls: ['./activate-recurring-deposits-account.component.scss'],
-  imports: [
-    ...STANDALONE_SHARED_IMPORTS
-  ]
+  styleUrls: ['./activate-recurring-deposits-account.component.scss']
 })
 export class ActivateRecurringDepositsAccountComponent implements OnInit {
   /** Minimum date allowed. */

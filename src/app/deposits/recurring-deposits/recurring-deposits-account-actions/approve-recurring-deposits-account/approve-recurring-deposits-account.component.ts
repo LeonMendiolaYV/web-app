@@ -8,7 +8,6 @@ import { RecurringDepositsService } from '../../recurring-deposits.service';
 import { SettingsService } from 'app/settings/settings.service';
 import { Dates } from 'app/core/utils/dates';
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
-import { STANDALONE_SHARED_IMPORTS } from 'app/standalone-shared.module';
 
 /**
  * Approve Recurring Deposits Account Component
@@ -16,11 +15,7 @@ import { STANDALONE_SHARED_IMPORTS } from 'app/standalone-shared.module';
 @Component({
   selector: 'mifosx-approve-recurring-deposits-account',
   templateUrl: './approve-recurring-deposits-account.component.html',
-  styleUrls: ['./approve-recurring-deposits-account.component.scss'],
-  imports: [
-    ...STANDALONE_SHARED_IMPORTS,
-    CdkTextareaAutosize
-  ]
+  styleUrls: ['./approve-recurring-deposits-account.component.scss']
 })
 export class ApproveRecurringDepositsAccountComponent implements OnInit {
   /** Minimum date allowed. */

@@ -193,9 +193,9 @@
     <span class="flex-60">{{ recurringDepositsAccountProductTemplate?.accountChart.name }}</span>
   </div>
 
-  <div class="layout-row flex-100">
-    <span class="flex-40">{{ 'labels.inputs.Valid from Date' | translate }}:</span>
-    <span class="flex-60">{{ recurringDepositsAccountProductTemplate?.accountChart.fromDate | dateFormat }}</span>
+  <div fxFlexFill>
+    <span fxFlex="40%">{{ 'labels.inputs.Valid from Date' | translate }}:</span>
+    <span fxFlex="60%">{{ recurringDepositsAccountProductTemplate?.accountChart.fromDate | dateFormat }}</span>
   </div>
 
   <div class="layout-row flex-100" *ngIf="recurringDepositsAccountProductTemplate?.accountChart.endDate">
